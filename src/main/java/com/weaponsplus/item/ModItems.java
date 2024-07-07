@@ -4,14 +4,18 @@ import com.weaponsplus.WeaponsPlus;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.Settings;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item RUSTY_SAW = registerItem("rustysaw", new Item(new Item.Settings()));
-    public static final Item RUSTY_INGOT = registerItem("rustyingot", new Item(new Item.Settings()));
+    public static final Item RUSTY_SAW = registerItem("rustysaw",
+            new SwordItem(ModToolMaterial.SAW, new Settings().maxCount(1)));
+
+    public static final Item RUSTY_INGOT = registerItem("rustyingot", new Item (new Settings()));
 
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUSTY_SAW);
