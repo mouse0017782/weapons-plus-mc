@@ -11,9 +11,14 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item RUSTY_SAW = registerItem("rustysaw", new Item(new Item.Settings()));
+    public static final Item RUSTY_INGOT = registerItem("rustyingot", new Item(new Item.Settings()));
 
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUSTY_SAW);
+    }
+
+    private static void addItemsToFunctionalTabItemGroup(FabricItemGroupEntries entries) {
+        entries.add(RUSTY_INGOT);
     }
 
     private static Item registerItem(String name, Item item) {
@@ -24,5 +29,6 @@ public class ModItems {
         WeaponsPlus.LOGGER.info("Regestering Mod Items" + WeaponsPlus.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModItems::addItemsToFunctionalTabItemGroup);
     }
 }
