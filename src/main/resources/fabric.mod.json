@@ -11,12 +11,15 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/weapons-plus/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.weaponsplus.WeaponsPlus"
+		],
+		"client": [
+			"com.weaponsplus.WeaponsPlusClient"
 		],
 		"fabric-datagen": [
 			"com.weaponsplus.WeaponsPlusDataGenerator"
