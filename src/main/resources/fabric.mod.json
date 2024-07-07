@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/weapons-plus/icon.png",
+	"icon": "assets/weaponsplus/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
