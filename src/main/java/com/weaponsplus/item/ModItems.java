@@ -13,7 +13,11 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item RUSTY_SAW = registerItem("rustysaw",
-            new SwordItem(ModToolMaterial.SAW, new Settings().maxCount(1)));
+            new SwordItem(ModToolMaterial.SAW,
+                    new Item.Settings().attributeModifiers(
+                            SwordItem.createAttributeModifiers(
+                                    ModToolMaterial.SAW,
+                                    1, 2))));
 
     public static final Item RUSTY_INGOT = registerItem("rustyingot", new Item (new Settings()));
 
