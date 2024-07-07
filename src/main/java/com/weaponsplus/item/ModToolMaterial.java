@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial
 {
-SAW(BlockTags.INCORRECT_FOR_STONE_TOOL, 32, 5f, 8f, 27,
+SAW(BlockTags.INCORRECT_FOR_STONE_TOOL, 32, 5f, 10f, 27,
         () -> Ingredient.ofItems(ModItems.RUSTY_INGOT));
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
