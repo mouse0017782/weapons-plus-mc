@@ -12,11 +12,17 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial
 {
+OBVI(BlockTags.INCORRECT_FOR_STONE_TOOL, 2385, 5, 7,30,
+        () -> Ingredient.ofItems(Items.OBSIDIAN)),
+
 SAW(BlockTags.INCORRECT_FOR_STONE_TOOL, 32, 5, 4, 27,
         () -> Ingredient.ofItems(ModItems.RUSTY_INGOT)),
 
 BATTLEAXE(BlockTags.INCORRECT_FOR_STONE_TOOL, 495, 5, 4, 27,
             () -> Ingredient.ofItems(Items.AIR));
+
+
+
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

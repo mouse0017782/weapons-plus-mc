@@ -31,5 +31,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.RUSTY_INGOT), conditionsFromItem(ModItems.RUSTY_INGOT))
                 .criterion(hasItem(Items.OAK_SLAB), conditionsFromItem(Items.OAK_SLAB))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUSTY_SAW)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.OBVI_SWORD, 1)
+                .pattern(" # ")
+                .pattern(" # ")
+                .pattern(" S ")
+                .input('#', Items.OBSIDIAN)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.OBSIDIAN), conditionsFromItem(Items.OBSIDIAN))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.OBVI_SWORD)));
     }
 }

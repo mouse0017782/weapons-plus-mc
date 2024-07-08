@@ -26,11 +26,19 @@ public class ModItems {
                                     ModToolMaterial.BATTLEAXE,
                                     3, -1.8f))));
 
+    public static final Item OBVI_SWORD = registerItem("obvisword",
+            new SwordItem(ModToolMaterial.OBVI,
+                    new Item.Settings().attributeModifiers(
+                            SwordItem.createAttributeModifiers(
+                                    ModToolMaterial.OBVI,
+                                    1, -1.8f))));
+
     public static final Item RUSTY_INGOT = registerItem("rustyingot", new Item (new Settings()));
 
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUSTY_SAW);
         entries.add(NRITE_BATTLE_AXE);
+        entries.add(OBVI_SWORD);
     }
 
     private static void addItemsToFunctionalTabItemGroup(FabricItemGroupEntries entries) {

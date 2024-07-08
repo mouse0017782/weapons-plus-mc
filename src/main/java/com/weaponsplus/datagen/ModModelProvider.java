@@ -22,5 +22,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.NRITE_BATTLE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUSTY_SAW, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUSTY_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OBVI_SWORD, Models.HANDHELD);
     }
 }
