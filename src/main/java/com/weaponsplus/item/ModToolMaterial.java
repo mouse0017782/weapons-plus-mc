@@ -2,6 +2,7 @@ package com.weaponsplus.item;
 
 import com.google.common.base.Suppliers;
 import net.minecraft.block.Block;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
@@ -11,8 +12,12 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial
 {
-SAW(BlockTags.INCORRECT_FOR_STONE_TOOL, 32, 5, 10, 27,
-        () -> Ingredient.ofItems(ModItems.RUSTY_INGOT));
+SAW(BlockTags.INCORRECT_FOR_STONE_TOOL, 32, 5, 4, 27,
+        () -> Ingredient.ofItems(ModItems.RUSTY_INGOT)),
+
+BATTLEAXE(BlockTags.INCORRECT_FOR_STONE_TOOL, 495, 5, 4, 27,
+            () -> Ingredient.ofItems(Items.AIR));
+
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
     private final float miningSpeed;

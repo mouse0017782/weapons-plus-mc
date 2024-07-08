@@ -19,10 +19,18 @@ public class ModItems {
                                     ModToolMaterial.SAW,
                                     1, 2))));
 
+    public static final Item NRITE_BATTLE_AXE = registerItem("nbaxe",
+            new SwordItem(ModToolMaterial.BATTLEAXE,
+                    new Item.Settings().attributeModifiers(
+                            SwordItem.createAttributeModifiers(
+                                    ModToolMaterial.BATTLEAXE,
+                                    3, -1.8f))));
+
     public static final Item RUSTY_INGOT = registerItem("rustyingot", new Item (new Settings()));
 
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUSTY_SAW);
+        entries.add(NRITE_BATTLE_AXE);
     }
 
     private static void addItemsToFunctionalTabItemGroup(FabricItemGroupEntries entries) {
