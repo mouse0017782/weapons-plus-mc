@@ -1,6 +1,7 @@
 package com.weaponsplus;
 
 import com.weaponsplus.item.ModItems;
+import com.weaponsplus.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -14,6 +15,7 @@ public class WeaponsPlus implements ModInitializer {
 	public void onInitialize() {
 
 		ModItems.registerModItems();
+		ModSounds.registerSounds();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
