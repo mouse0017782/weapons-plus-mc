@@ -8,8 +8,9 @@
 		"_corruptedpuppy_"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"issue tracker": "https://github.com/mouse0017782/weapons-plus-mc/issues"
+		"homepage": "https://modrinth.com/mod/weapons-plus",
+		"sources": "https://github.com/mouse0017782/weapons-plus-mc"
 	},
 	"license": "MIT",
 	"icon": "assets/weaponsplus/icon.png",
