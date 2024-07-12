@@ -24,7 +24,7 @@ public class ModItems {
                     new Item.Settings().attributeModifiers(
                             SwordItem.createAttributeModifiers(
                                     ModToolMaterial.BATTLEAXE,
-                                    3, -1.8f))));
+                                    5, -1.8f))));
 
     public static final Item OBVI_SWORD = registerItem("obvisword",
             new SwordItem(ModToolMaterial.OBVI,
@@ -33,12 +33,36 @@ public class ModItems {
                                     ModToolMaterial.OBVI,
                                     1, -1.8f))));
 
+    public static final Item GOLD_BATTLE_AXE = registerItem("gbaxe",
+        new SwordItem(ModToolMaterial.BATTLEAXE,
+                    new Item.Settings().attributeModifiers(
+                            SwordItem.createAttributeModifiers(
+                                    ModToolMaterial.BATTLEAXE,
+                                    1, -1.8f))));
+
+    public static final Item IRON_BATTLE_AXE = registerItem("ibaxe",
+            new SwordItem(ModToolMaterial.BATTLEAXE,
+                    new Item.Settings().attributeModifiers(
+                            SwordItem.createAttributeModifiers(
+                                    ModToolMaterial.BATTLEAXE,
+                                    2, -1.8f))));
+
+    public static final Item DIAMOND_BATTLE_AXE = registerItem("dbaxe",
+            new SwordItem(ModToolMaterial.BATTLEAXE,
+                    new Item.Settings().attributeModifiers(
+                            SwordItem.createAttributeModifiers(
+                                    ModToolMaterial.BATTLEAXE,
+                                    4, -1.8f))));
+
     public static final Item RUSTY_INGOT = registerItem("rustyingot", new Item (new Settings()));
 
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUSTY_SAW);
         entries.add(NRITE_BATTLE_AXE);
         entries.add(OBVI_SWORD);
+        entries.add(DIAMOND_BATTLE_AXE);
+        entries.add(IRON_BATTLE_AXE);
+        entries.add(GOLD_BATTLE_AXE);
     }
 
     private static void addItemsToFunctionalTabItemGroup(FabricItemGroupEntries entries) {

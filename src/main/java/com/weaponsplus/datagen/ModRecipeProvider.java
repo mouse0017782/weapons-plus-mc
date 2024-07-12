@@ -36,6 +36,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.OAK_SLAB), conditionsFromItem(Items.OAK_SLAB))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUSTY_SAW)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRON_BATTLE_AXE, 1)
+                .pattern(" ##")
+                .pattern(" S#")
+                .pattern(" S ")
+                .input('#', Items.IRON_BLOCK)
+                .input('S', Items.STICK)
+            .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(Items.IRON_BLOCK), conditionsFromItem(Items.IRON_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IRON_BATTLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GOLD_BATTLE_AXE, 1)
+                .pattern(" ##")
+                .pattern(" S#")
+                .pattern(" S ")
+                .input('#', Items.GOLD_BLOCK)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(Items.GOLD_BLOCK), conditionsFromItem(Items.GOLD_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GOLD_BATTLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DIAMOND_BATTLE_AXE, 1)
+                .pattern(" ##")
+                .pattern(" S#")
+                .pattern(" S ")
+                .input('#', Items.DIAMOND_BLOCK)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(Items.DIAMOND_BLOCK), conditionsFromItem(Items.DIAMOND_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GOLD_BATTLE_AXE)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.OBVI_SWORD, 1)
                 .pattern(" # ")
                 .pattern(" # ")

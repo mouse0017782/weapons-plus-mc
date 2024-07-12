@@ -1,5 +1,8 @@
 {
   "item.weaponsplus.rustysaw": "Rusty Saw",
   "item.weaponsplus.rustyingot": "Rusty Ingot",
-  "item.weaponsplus.nbaxe": "Netherite Battle Axe"
+  "item.weaponsplus.nbaxe": "Netherite Battle Axe",
+  "item.weaponsplus.ibaxe": "Iron Battle Axe",
+  "item.weaponsplus.dbaxe": "Diamond Battle Axe",
+  "item.weaponsplus.gbaxe": "Gold Battle Axe"
 }
