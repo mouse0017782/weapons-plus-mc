@@ -64,7 +64,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .criterion(hasItem(Items.DIAMOND_BLOCK), conditionsFromItem(Items.DIAMOND_BLOCK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GOLD_BATTLE_AXE)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DIAMOND_BATTLE_AXE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.OBVI_SWORD, 1)
                 .pattern(" # ")

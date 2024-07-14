@@ -1,6 +1,8 @@
-// 1.20.6	2024-07-12T17:53:13.0677503	Weapons Plus/Recipes
+// 1.20.6	2024-07-14T17:10:45.9256702	Weapons Plus/Recipes
 326dbd18d7221363e9dedc13491baeade46ad226 data\weapons-plus\advancements\recipes\combat\rustysaw.json
+70e00b617802732742d8e8ecfafc1e14bed584e2 data\weapons-plus\recipes\dbaxe.json
 a8ce850a16eb811624a0c6cbc75de93d613558b0 data\weapons-plus\advancements\recipes\combat\obvisword.json
+7f4ef0300544304379a669c2d56940e2804f9839 data\weapons-plus\advancements\recipes\combat\dbaxe.json
 68e677adf9c3b834a7ccfc82840a5b6d0ae1fd27 data\weapons-plus\recipes\rustysaw.json
 364686206c6066ac0140d08b7a2379841462eb8c data\weapons-plus\advancements\recipes\combat\gbaxe.json
 6a121a182f729956fc92e36d6e90d8d341f91a3e data\weapons-plus\advancements\recipes\combat\ibaxe.json
