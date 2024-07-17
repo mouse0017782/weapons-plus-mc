@@ -1,26 +1,29 @@
 {
 	"schemaVersion": 1,
-	"id": "weapons-plus",
+	"id": "weaponsplus",
 	"version": "${version}",
 	"name": "Weapons Plus",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "More Weapons",
 	"authors": [
-		"Me!"
+		"_corruptedpuppy_"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/weapons-plus",
+		"sources": "https://github.com/mouse0017782/weapons-plus-mc"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/weapons-plus/icon.png",
+	"license": "MIT",
+	"icon": "assets/weaponsplus/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.weaponsplus.WeaponsPlus"
-		],
+	],
+		"client": [
+			"com.weaponsplus.WeaponsPlusClient"
+	],
 		"fabric-datagen": [
 			"com.weaponsplus.WeaponsPlusDataGenerator"
-		]
+]
 	},
 	"mixins": [
 		"weapons-plus.mixins.json"
